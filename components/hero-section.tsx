@@ -12,21 +12,12 @@ export function HeroSection() {
   }
 
   return (
-    <div className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-      {/* Background with overlay */}
-      <div
-        className="absolute inset-0 bg-cover bg-center z-0"
-        style={{
-          backgroundImage: "url('/placeholder.svg?height=1080&width=1920')",
-          backgroundSize: "cover",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Build Your Dream PC</h1>
+    <div className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-gray-900">
+      {/* Main content */}
+      <div className="text-center px-4 max-w-4xl">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          Build Your Dream PC
+        </h1>
         <p className="text-xl md:text-2xl text-white/80 mb-8">
           Select high-quality components for your custom build with our interactive part picker
         </p>
@@ -53,4 +44,3 @@ export function HeroSection() {
     </div>
   )
 }
-
