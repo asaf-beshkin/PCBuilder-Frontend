@@ -134,17 +134,17 @@ const cooling = {
   ]
 }
 
-// Mapping product data by type for easy access in the component
 const productData: Record<string, any> = {
   cpu: cpus,
   gpu: gpus,
-  memory: memory,
+  ram: memory, // changed key from "memory" to "ram"
   storage: storage,
   motherboard: motherboard,
   psu: psu,
   case: caseData,
   cooling: cooling
 }
+
 
 // --- End Embedded Data ---
 
