@@ -12,7 +12,11 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "PC Builder - Custom Computer Part Picker",
   description: "Build your custom PC with our interactive component selector",
-    generator: 'v0.dev'
+  generator: "v0.dev",
+  icons: {
+    icon: "/icon.ico",           // Replace with your favicon path
+    apple: "/icon.png", // Replace with your Apple Touch Icon path
+  },
 }
 
 export default function RootLayout({
@@ -37,7 +41,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'
